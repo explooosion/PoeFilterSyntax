@@ -1,0 +1,5 @@
+#顯示,傳奇物品,橘框,字體50
+Show
+    Rarity = Unique 
+    SetBorderColor 255 128 0
+    SetFontSize 50

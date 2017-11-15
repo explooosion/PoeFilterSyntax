@@ -1,0 +1,37 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Filter",
+	"patterns": [{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}, {
+			"include": "#option"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.filter",
+				"match": "\\b(if|while|for|return|Show|Hide)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.filter",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [{
+				"name": "constant.character.escape.filter",
+				"match": "\\\\"
+			}]
+		},
+		"option": {
+			"patterns": [{
+				"name": "keyword.operator.js",
+				"match": "\\b(Rarity|Class|BaseType|SetTextColor|SetFontSize|SetBorderColor|SetBackgroundColor|PlayAlertSound)\\b"
+			}]
+		}
+	},
+	"scopeName": "source.filter"
+}
