@@ -1,0 +1,40 @@
+{
+    "name": "poe-filter",
+    "displayName": "Filter",
+    "description": "this is a poe filter syntax",
+    "version": "0.0.1",
+    "publisher": "Robby",
+    "engines": {
+        "vscode": "^1.18.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "icon": "images/pathofexile.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chenxsan/vscode-standard-format/"
+    },
+    "contributes": {
+        "languages": [
+            {
+                "id": "filter",
+                "aliases": [
+                    "Filter",
+                    "filter"
+                ],
+                "extensions": [
+                    ".filter"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "filter",
+                "scopeName": "source.filter",
+                "path": "./syntaxes/Filter.tmLanguage.json"
+            }
+        ]
+    }
+}
