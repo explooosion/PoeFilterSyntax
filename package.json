@@ -9,9 +9,6 @@
     "engines": {
         "vscode": "^1.18.0"
     },
-    "activationEvents": [
-        "filter"
-    ],
     "categories": [
         "Languages"
     ],
