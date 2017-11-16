@@ -43,4 +43,9 @@ No requirements.
 
 -------
 
+## License
+MIT
+
+-------
+
 **Enjoy!**
