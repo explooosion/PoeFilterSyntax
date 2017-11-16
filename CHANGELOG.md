@@ -1,7 +1,9 @@
 # Change Log
 All notable changes to the "poe-filter" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## [0.0.4] - 2017-11-17
+### Changed
+- update readme. 
 
-## [Unreleased]
+## [released]
 - Initial release
