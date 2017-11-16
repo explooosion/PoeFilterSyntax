@@ -1,5 +1,8 @@
 # POE Filter Syntax
 
+[![dependencies Status](https://david-dm.org/explooosion/PoeFilterSyntax.svg)](https://david-dm.org/)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/explooosion/PoeFilterSyntax/blob/master/LICENSE)
+
 Github：[POE Filter Syntax](https://github.com/explooosion/PoeFilterSyntax)
 
 Vscode Market：[POE Filter Syntax](https://github.com/explooosion/PoeFilterSyntax)
