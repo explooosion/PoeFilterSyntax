@@ -5,7 +5,7 @@
 
 Github：[POE Filter Syntax](https://github.com/explooosion/PoeFilterSyntax)
 
-Vscode Market：[POE Filter Syntax](https://github.com/explooosion/PoeFilterSyntax)
+Vscode Market：[POE Filter Syntax](https://marketplace.visualstudio.com/items?itemName=robby.poe-filter)
 
 -------
 
