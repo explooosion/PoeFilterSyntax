@@ -5,5 +5,5 @@ All notable changes to the "poe-filter" extension will be documented in this fil
 ### Changed
 - update readme. 
 
-## [released]
+## [released] - 2017-11-17
 - Initial release
