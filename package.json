@@ -1,40 +1,44 @@
 {
     "name": "poe-filter",
-    "displayName": "Filter",
-    "description": "this is a poe filter syntax",
-    "version": "0.0.1",
+    "displayName": "POE Filter",
+    "description": "Syntax support for POE filter.",
+    "version": "1.0.0",
+    "author": "Robby",
+    "license": "MIT",
     "publisher": "Robby",
     "engines": {
         "vscode": "^1.18.0"
     },
+    "activationEvents": [
+        "filter"
+    ],
     "categories": [
         "Languages"
     ],
     "icon": "images/pathofexile.png",
     "repository": {
         "type": "git",
-        "url": "https://github.com/chenxsan/vscode-standard-format/"
+        "url": "https://github.com/explooosion/PoeFilterSyntax"
+    },
+    "bugs": {
+        "url": "https://github.com/explooosion/PoeFilterSyntax/issues"
     },
     "contributes": {
-        "languages": [
-            {
-                "id": "filter",
-                "aliases": [
-                    "Filter",
-                    "filter"
-                ],
-                "extensions": [
-                    ".filter"
-                ],
-                "configuration": "./language-configuration.json"
-            }
-        ],
-        "grammars": [
-            {
-                "language": "filter",
-                "scopeName": "source.filter",
-                "path": "./syntaxes/Filter.tmLanguage.json"
-            }
-        ]
+        "languages": [{
+            "id": "filter",
+            "aliases": [
+                "Filter",
+                "filter"
+            ],
+            "extensions": [
+                ".filter"
+            ],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "filter",
+            "scopeName": "source.filter",
+            "path": "./syntaxes/Filter.tmLanguage.json"
+        }]
     }
 }
