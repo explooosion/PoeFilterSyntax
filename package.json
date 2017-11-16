@@ -2,9 +2,9 @@
     "name": "poe-filter",
     "displayName": "POE Filter",
     "description": "Syntax support for POE filter.",
-    "version": "1.0.0",
-    "author": "Robby",
+    "version": "0.0.1",
     "license": "MIT",
+    "author": "Robby",
     "publisher": "Robby",
     "engines": {
         "vscode": "^1.18.0"
@@ -15,7 +15,7 @@
     "categories": [
         "Languages"
     ],
-    "icon": "images/pathofexile.png",
+    "icon": "https://raw.githubusercontent.com/explooosion/PoeFilterSyntax/master/images/pathofexile.png",
     "repository": {
         "type": "git",
         "url": "https://github.com/explooosion/PoeFilterSyntax"
