@@ -32,7 +32,7 @@ The extension will make your **.filter** more visible and editable.
 + Step1. open your filter
 + Step2. ctrl + shift + C
 + Step3. choose Filter
-![Setting](./images/setting1.jpg)
+![Setting](https://raw.githubusercontent.com/explooosion/PoeFilterSyntax/master/images/setting1.jpg)
 
 -------
 
