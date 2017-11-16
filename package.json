@@ -5,7 +5,7 @@
     "version": "0.0.1",
     "license": "MIT",
     "author": "Robby",
-    "publisher": "Robby",
+    "publisher": "robby",
     "engines": {
         "vscode": "^1.18.0"
     },
