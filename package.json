@@ -2,7 +2,7 @@
     "name": "poe-filter",
     "displayName": "POE Filter",
     "description": "Syntax support for POE filter.",
-    "version": "0.0.4",
+    "version": "0.1.0",
     "license": "MIT",
     "author": "Robby",
     "publisher": "robby",
@@ -10,7 +10,7 @@
         "vscode": "^1.18.0"
     },
     "categories": [
-        "Languages"
+        "Formatters"
     ],
     "icon": "images/logo.png",
     "repository": {

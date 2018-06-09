@@ -1,8 +1,7 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "Filter",
-	"patterns": [
-		{
+	"patterns": [{
 			"include": "#operator"
 		},
 		{
@@ -23,58 +22,46 @@
 	],
 	"repository": {
 		"operator": {
-			"patterns": [
-				{
-					"name": "keyword",
-					"match": "(=|<|>)"
-				}
-			]
+			"patterns": [{
+				"name": "keyword",
+				"match": "(=|<|>)"
+			}]
 		},
 		"number": {
-			"patterns": [
-				{
-					"name": "entity.name.function",
-					"match": "(1|2|3|4|5|6|7|8|9|0|Rare|Unique|Normal)"
-				}
-			]
+			"patterns": [{
+				"name": "entity.name.function",
+				"match": "(1|2|3|4|5|6|7|8|9|0|Rare|Unique|Normal|Magic|RGB|Maps)"
+			}]
 		},
 		"keywords": {
-			"patterns": [
-				{
-					"name": "keyword",
-					"match": "\\b(Show|Hide)\\b"
-				}
-			]
+			"patterns": [{
+				"name": "keyword",
+				"match": "\\b(Show|Hide)\\b"
+			}]
 		},
 		"attribute": {
-			"patterns": [
-				{
-					"name": "variable",
-					"match": "\\b(LinkedSockets|SetTextColor|SetBackgroundColor|SetBorderColor|SetFontSize|PlayAlertSound|BaseType|Class|Rarity|ItemLevel|DropLevel|Sockets|SocketGroup|Width|Height|Quality)\\b"
-				}
-			]
+			"patterns": [{
+				"name": "variable",
+				"match": "\\b(LinkedSockets|SetTextColor|SetBackgroundColor|SetBorderColor|SetFontSize|PlayAlertSound|BaseType|Class|Rarity|ItemLevel|DropLevel|Sockets|SocketGroup|Width|Height|Quality|Corrupted|GemLevel|ShapedMap|Identified|HasExplicitMod|ShaperItem)\\b"
+			}]
 		},
 		"strings": {
 			"name": "string",
 			"begin": "\"",
 			"end": "\"",
-			"patterns": [
-				{
-					"name": "string",
-					"match": "\\\\"
-				}
-			]
+			"patterns": [{
+				"name": "string",
+				"match": "\\\\"
+			}]
 		},
 		"comment-line": {
 			"name": "comment",
 			"begin": "#",
 			"end": "\n",
-			"patterns": [
-				{
-					"name": "comment",
-					"match": "\\\\"
-				}
-			]
+			"patterns": [{
+				"name": "comment",
+				"match": "\\\\"
+			}]
 		}
 	},
 	"scopeName": "source.filter"
