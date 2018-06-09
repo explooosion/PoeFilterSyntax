@@ -11,15 +11,17 @@ Vscode Market：[POE Filter Syntax](https://marketplace.visualstudio.com/items?i
 
 ## Features
 
-This is a POE ( Path of Exile ) filter syntax for VS Code.
+This is a POE ( Path of Exile ) filter syntax for [VS Code](https://code.visualstudio.com/).
 
-The extension will make your **.filter** more visible and editable.
+The extension will make your `.filter` more visible and editable.
 
 -------
 
 ## Demo
-  
-+ Theme：[Ramda](https://marketplace.visualstudio.com/items?itemName=gluons.ramda-theme)  
+
+Change the Theme in Visual Studio Code.
+
++ Theme：[Ramda](https://marketplace.visualstudio.com/items?itemName=gluons.ramda-theme) ✨  
 ![POE Filter Syntax](https://raw.githubusercontent.com/explooosion/PoeFilterSyntax/master/images/poe-filter-syntax-ramda.jpg)
 
 + Theme：Dark+(default dark)  
@@ -33,7 +35,7 @@ The extension will make your **.filter** more visible and editable.
 ## Setting
 
 1. Open your filter file
-2. Change language Mode (Ctrl+K M)
+2. Change language Mode ( `Ctrl`+`K`, `M` )
 3. Choose Filter
   
 ![Setting](https://raw.githubusercontent.com/explooosion/PoeFilterSyntax/master/images/setting1.jpg)
