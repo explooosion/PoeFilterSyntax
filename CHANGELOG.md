@@ -4,7 +4,7 @@ All notable changes to the "poe-filter" extension will be documented in this fil
 ## Update
 
 ### 2018-06-09 - `0.1.0`
-- Update key word
+- Update keywords
 
 ### 2017-11-17 - `0.0.4`
 - Update readme
@@ -15,4 +15,4 @@ All notable changes to the "poe-filter" extension will be documented in this fil
 - Initial release
 
 ### 2018-06-09
-- Update key word ([NeverSink-Filter](https://github.com/NeverSinkDev/NeverSink-Filter))
+- Update keywords ([NeverSink-Filter](https://github.com/NeverSinkDev/NeverSink-Filter))
