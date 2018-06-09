@@ -42,6 +42,12 @@ Change the Theme in Visual Studio Code.
 
 -------
 
+## Install
+
+![Image](https://i.imgur.com/3b42usZ.png)
+
+-------
+
 ## Requirements
 
 No requirements.
