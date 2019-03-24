@@ -1,4 +1,4 @@
-# POE Filter Syntax
+# POE Filter Syntax(Highlight)
 
 [![dependencies Status](https://david-dm.org/explooosion/PoeFilterSyntax.svg)](https://david-dm.org/)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/explooosion/PoeFilterSyntax/blob/master/LICENSE)
@@ -11,7 +11,7 @@ Vscode Market：[POE Filter Syntax](https://marketplace.visualstudio.com/items?i
 
 ## Features
 
-This is a POE ( Path of Exile ) filter syntax for [VS Code](https://code.visualstudio.com/).
+This is a POE ( Path of Exile ) filter highlight for [VS Code](https://code.visualstudio.com/).
 
 The extension will make your `.filter` more visible and editable.
 
