@@ -2,7 +2,7 @@
     "name": "poe-filter",
     "displayName": "POE Filter",
     "description": "Syntax support for POE filter.",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "license": "MIT",
     "author": "Robby",
     "publisher": "robby",
