@@ -1,11 +1,11 @@
-# POE Filter Syntax(Highlight)
+# POE Filter Highlight
 
 [![dependencies Status](https://david-dm.org/explooosion/PoeFilterSyntax.svg)](https://david-dm.org/)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/explooosion/PoeFilterSyntax/blob/master/LICENSE)
 
-Github：[POE Filter Syntax](https://github.com/explooosion/PoeFilterSyntax)
+Github：[POE Filter Highlight](https://github.com/explooosion/PoeFilterSyntax)
 
-Vscode Market：[POE Filter Syntax](https://marketplace.visualstudio.com/items?itemName=robby.poe-filter)
+Vscode Market：[POE Filter Highlight](https://marketplace.visualstudio.com/items?itemName=robby.poe-filter)
 
 -------
 
@@ -22,13 +22,13 @@ The extension will make your `.filter` more visible and editable.
 Change the Theme in Visual Studio Code.
 
 + Theme：[Ramda](https://marketplace.visualstudio.com/items?itemName=gluons.ramda-theme) ✨  
-![POE Filter Syntax](https://raw.githubusercontent.com/explooosion/PoeFilterSyntax/master/images/poe-filter-syntax-ramda.jpg)
+![POE Filter Highlight](https://raw.githubusercontent.com/explooosion/PoeFilterSyntax/master/images/poe-filter-syntax-ramda.jpg)
 
 + Theme：Dark+(default dark)  
-![POE Filter Syntax](https://raw.githubusercontent.com/explooosion/PoeFilterSyntax/master/images/poe-filter-syntax-dark.jpg)  
+![POE Filter Highlight](https://raw.githubusercontent.com/explooosion/PoeFilterSyntax/master/images/poe-filter-syntax-dark.jpg)  
 
 + Theme：[Dark+ Material](https://marketplace.visualstudio.com/items?itemName=vangware.dark-plus-material)  
-![POE Filter Syntax](https://raw.githubusercontent.com/explooosion/PoeFilterSyntax/master/images/poe-filter-syntax-dark-material.jpg)
+![POE Filter Highlight](https://raw.githubusercontent.com/explooosion/PoeFilterSyntax/master/images/poe-filter-syntax-dark-material.jpg)
 
 -------
 
