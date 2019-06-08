@@ -3,6 +3,9 @@ All notable changes to the "poe-filter" extension will be documented in this fil
 
 ## Update
 
+### 2019-06-09 - `0.1.2`
+- Add missing keywords ([#2](https://github.com/explooosion/PoeFilterSyntax/pull/2))
+
 ### 2019-03-24 - `0.1.1`
 - Add missing keywords ([#1](https://github.com/explooosion/PoeFilterSyntax/pull/1))
 
