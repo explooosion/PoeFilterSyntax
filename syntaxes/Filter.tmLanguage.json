@@ -48,7 +48,7 @@
 		"color": {
 			"patterns": [{
 				"name": "constant.numeric",
-				"match": "\\b(Red|Green|Blue|Brown|White|Yellow|Circle|Diamond|Hexagon|Square|Star|Triangle|Temp)\\b"
+				"match": "\\b(Red|Green|Blue|Brown|White|Yellow|Circle|Grey|Pink|Cyan|Purple|Orange|Diamond|Hexagon|Square|Star|Triangle|Kite|Cross|Pentagon|Moon|Teardrop|UpsideDownHouse|Temp)\\b"
 			}]
 		},
 		"keywords": {
