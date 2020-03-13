@@ -8,6 +8,12 @@
 			"include": "#number"
 		},
 		{
+			"include": "#influences"
+		},
+		{
+			"include": "#color"
+		},
+		{
 			"include": "#keywords"
 		},
 		{
@@ -33,16 +39,28 @@
 				"match": "(1|2|3|4|5|6|7|8|9|0|Rare|Unique|Normal|Magic|RGB|Maps)"
 			}]
 		},
+		"influences": {
+			"patterns": [{
+				"name": "entity.name.function",
+				"match": "\\b(Shaper|Elder|Hunter|Warlord|Crusader|Redeemer)\\b"
+			}]
+		},
+		"color": {
+			"patterns": [{
+				"name": "constant.numeric",
+				"match": "\\b(Red|Green|Blue|Brown|White|Yellow|Circle|Grey|Pink|Cyan|Purple|Orange|Diamond|Hexagon|Square|Star|Triangle|Kite|Cross|Pentagon|Moon|Teardrop|UpsideDownHouse|Temp)\\b"
+			}]
+		},
 		"keywords": {
 			"patterns": [{
 				"name": "keyword",
-				"match": "\\b(Show|Hide)\\b"
+				"match": "\\b(Show|Hide|True|False)\\b"
 			}]
 		},
 		"attribute": {
 			"patterns": [{
 				"name": "variable",
-				"match": "\\b(LinkedSockets|SetTextColor|SetBackgroundColor|SetBorderColor|SetFontSize|PlayAlertSound|BaseType|Class|Rarity|Prophecy|ItemLevel|DropLevel|Sockets|SocketGroup|Width|Height|StackSize|Quality|Corrupted|GemLevel|ShapedMap|ElderMap|Identified|HasExplicitMod|AnyEnchantment|HasEnchantment|ShaperItem|FracturedItem|SynthesisedItem|MinimapIcon|PlayEffect|ElderItem|DisableDropSound|MapTier)\\b"
+				"match": "\\b(LinkedSockets|SetTextColor|SetBackgroundColor|SetBorderColor|SetFontSize|PlayAlertSound|BaseType|Class|Rarity|Prophecy|ItemLevel|DropLevel|Sockets|SocketGroup|Width|Height|StackSize|Quality|Corrupted|GemLevel|ShapedMap|ElderMap|Identified|HasExplicitMod|AnyEnchantment|HasEnchantment|ShaperItem|FracturedItem|SynthesisedItem|MinimapIcon|PlayEffect|ElderItem|CorruptedMods|DisableDropSound|MapTier|HasInfluence|AreaLevel)\\b"
 			}]
 		},
 		"strings": {

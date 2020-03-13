@@ -1,41 +1,50 @@
 {
-    "name": "poe-filter",
-    "displayName": "POE Filter",
-    "description": "Highlighting for POE filter.",
-    "version": "0.1.2",
-    "license": "MIT",
-    "author": "Robby",
-    "publisher": "robby",
-    "engines": {
-        "vscode": "^1.18.0"
-    },
-    "categories": [
-        "Formatters"
-    ],
-    "icon": "images/logo.png",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/explooosion/PoeFilterSyntax"
-    },
-    "bugs": {
-        "url": "https://github.com/explooosion/PoeFilterSyntax/issues"
-    },
-    "contributes": {
-        "languages": [{
-            "id": "filter",
-            "aliases": [
-                "Filter",
-                "filter"
-            ],
-            "extensions": [
-                ".filter"
-            ],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "filter",
-            "scopeName": "source.filter",
-            "path": "./syntaxes/Filter.tmLanguage.json"
-        }]
-    }
+	"name": "poe-filter",
+	"displayName": "POE Filter",
+	"description": "Highlighting for POE filter.",
+	"version": "0.1.2",
+	"license": "MIT",
+	"author": "Robby",
+	"publisher": "robby",
+	"engines": {
+		"vscode": "^1.18.0"
+	},
+	"categories": [
+		"Formatters"
+	],
+	"icon": "images/logo.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/explooosion/PoeFilterSyntax"
+	},
+	"bugs": {
+		"url": "https://github.com/explooosion/PoeFilterSyntax/issues"
+	},
+	"contributes": {
+		"languages": [
+			{
+				"id": "filter",
+				"aliases": [
+					"Filter",
+					"filter"
+				],
+				"extensions": [
+					".filter"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "filter",
+				"scopeName": "source.filter",
+				"path": "./syntaxes/Filter.tmLanguage.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "1d49dfdc-2274-4171-9206-f2f471c416d8",
+		"publisherDisplayName": "Robby",
+		"publisherId": "d3da4c8a-6031-4a1b-8bc5-fc54c208c025"
+	}
 }
