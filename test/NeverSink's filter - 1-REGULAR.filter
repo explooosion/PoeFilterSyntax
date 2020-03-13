@@ -2,7 +2,7 @@
 # NeverSink's Indepth Loot Filter - for Path of Exile
 #===============================================================================================================
 # VERSION:  7.7.1
-# TYPE:     0-SOFT
+# TYPE:     1-REGULAR
 # STYLE:    NORMAL
 # AUTHOR:   NeverSink
 # BUILDNOTES: Filter generated with NeverSink's FilterpolishZ
@@ -2773,14 +2773,14 @@ Show # %D1
 #   [2201] Endgame-start 4-links
 #------------------------------------
 
-Show # %D0
-	LinkedSockets >= 4
-	ItemLevel < 72
-	DropLevel >= 65
-	Rarity < Rare
-	Class "Body Armour" "Boots" "Gloves" "Helmets"
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
+#Show # %D0
+#	LinkedSockets >= 4
+#	ItemLevel < 72
+#	DropLevel >= 65
+#	Rarity < Rare
+#	Class "Body Armour" "Boots" "Gloves" "Helmets"
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
 
 #------------------------------------
 #   [2202] 60+ Crafting rules for 60++ trinkets
@@ -2795,45 +2795,45 @@ Show # %D1
 	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
 	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
 
-Show # %D0
-	ItemLevel >= 75
-	Rarity Normal
-	Class Amulet Belts Rings
-	BaseType "Agate" "Amber" "Citrine" "Coral Ring" "Gold" "Heavy Belt" "Jade" "Lapis" "Leather" "Moonstone" "Ruby" "Rustic Sash" "Sapphire" "Topaz" "Turquoise"
-	SetTextColor 200 200 200 210            # TEXTCOLOR:	 Neutral Priority
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
+#Show # %D0
+#	ItemLevel >= 75
+#	Rarity Normal
+#	Class Amulet Belts Rings
+#	BaseType "Agate" "Amber" "Citrine" "Coral Ring" "Gold" "Heavy Belt" "Jade" "Lapis" "Leather" "Moonstone" "Ruby" "Rustic Sash" "Sapphire" "Topaz" "Turquoise"
+#	SetTextColor 200 200 200 210            # TEXTCOLOR:	 Neutral Priority
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
 
-Show # %D0
-	ItemLevel >= 65
-	ItemLevel <= 74
-	Rarity Normal
-	Class Amulet Belts Rings
-	BaseType "Diamond" "Onyx" "Prismatic" "Two-Stone"
-	SetTextColor 200 200 200 210            # TEXTCOLOR:	 Neutral Priority
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
+#Show # %D0
+#	ItemLevel >= 65
+#	ItemLevel <= 74
+#	Rarity Normal
+#	Class Amulet Belts Rings
+#	BaseType "Diamond" "Onyx" "Prismatic" "Two-Stone"
+#	SetTextColor 200 200 200 210            # TEXTCOLOR:	 Neutral Priority
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
 
-Show # %D0
-	ItemLevel >= 65
-	ItemLevel <= 74
-	Rarity Normal
-	Class Amulet Belts Rings
-	BaseType "Agate" "Amber" "Chain Belt" "Citrine" "Coral Ring" "Gold" "Heavy Belt" "Jade" "Lapis" "Leather" "Moonstone" "Ruby" "Rustic Sash" "Sapphire" "Topaz" "Turquoise"
-	SetTextColor 200 200 200 210            # TEXTCOLOR:	 Neutral Priority
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
+#Show # %D0
+#	ItemLevel >= 65
+#	ItemLevel <= 74
+#	Rarity Normal
+#	Class Amulet Belts Rings
+#	BaseType "Agate" "Amber" "Chain Belt" "Citrine" "Coral Ring" "Gold" "Heavy Belt" "Jade" "Lapis" "Leather" "Moonstone" "Ruby" "Rustic Sash" "Sapphire" "Topaz" "Turquoise"
+#	SetTextColor 200 200 200 210            # TEXTCOLOR:	 Neutral Priority
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
 
 #------------------------------------
 #   [2203] Low Strictness Magic/Normal Trinkets
 #------------------------------------
 
-Show # %D0
-	ItemLevel >= 65
-	Rarity Magic
-	Class Amulets Belts Rings
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
+#Show # %D0
+#	ItemLevel >= 65
+#	Rarity Magic
+#	Class Amulets Belts Rings
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
 
 #===============================================================================================================
 # [[2300]] HIDE LAYER 1 - MAGIC AND NORMAL ITEMS
@@ -7132,12 +7132,12 @@ Show # %D2
 	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
 	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
 
-Show # %D0
-	ItemLevel <= 5
-	Rarity Normal
-	Class "Body Armours"
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
+#Show # %D0
+#	ItemLevel <= 5
+#	Rarity Normal
+#	Class "Body Armours"
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
 
 #===============================================================================================================
 # [[5500]] Leveling - misc magic items

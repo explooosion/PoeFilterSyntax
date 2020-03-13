@@ -2,7 +2,7 @@
 # NeverSink's Indepth Loot Filter - for Path of Exile
 #===============================================================================================================
 # VERSION:  7.7.1
-# TYPE:     0-SOFT
+# TYPE:     2-SEMI-STRICT
 # STYLE:    NORMAL
 # AUTHOR:   NeverSink
 # BUILDNOTES: Filter generated with NeverSink's FilterpolishZ
@@ -2362,13 +2362,13 @@ Show # %H4 $x->overquality
 
 # Crude bows are sometimes used by summonners as easy-to-color-bows for crafting
 
-Show # %D1
-	ItemLevel >= 50
-	Rarity <= Rare
-	BaseType "Crude Bow"
-	SetFontSize 40
-	SetBorderColor 0 240 190 240            # BORDERCOLOR:	 Special Base
-	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
+#Show # %D1
+#	ItemLevel >= 50
+#	Rarity <= Rare
+#	BaseType "Crude Bow"
+#	SetFontSize 40
+#	SetBorderColor 0 240 190 240            # BORDERCOLOR:	 Special Base
+#	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
 
 # Double corrupted items can sometimes be interesting.
 
@@ -2518,14 +2518,14 @@ Show # %D2 %RECEIVER->CRAFTING->T2 $type->normalcraft->i84 $tier->t2
 	SetBorderColor 200 200 0 185
 	SetBackgroundColor 0 0 0 185
 
-Show # %D1 %RECEIVER->CRAFTING->T3 $type->normalcraft->i84 $tier->t3
-	ItemLevel <= 85
-	ItemLevel >= 84
-	Rarity < Rare
-	BaseType "Ambusher" "Archon Kite Shield" "Assassin's Garb" "Astral Plate" "Colossal Tower Shield" "Coronal Maul" "Deicide Mask" "Demon Dagger" "Exquisite Blade" "Fleshripper" "Fossilised Spirit Shield" "Gemini Claw" "Harbinger Bow" "Harmonic Spirit Shield" "Harpy Rapier" "Heavy Belt" "Imbued Wand" "Jewelled Foil" "Kris" "Opal Sceptre" "Opal Wand" "Pinnacle Tower Shield" "Profane Wand" "Royal Burgonet" "Sadist Garb" "Saintly Chainmail" "Sambar Sceptre" "Siege Axe" "Skean" "Slink Boots" "Slink Gloves" "Spine Bow" "Spiraled Foil" "Thicket Bow" "Titan Gauntlets" "Titan Greaves" "Vaal Axe" "Vaal Regalia" "Void Sceptre"
-	SetFontSize 40
-	SetBorderColor 200 200 0 185
-	SetBackgroundColor 0 0 0 185
+#Show # %D1 %RECEIVER->CRAFTING->T3 $type->normalcraft->i84 $tier->t3
+#	ItemLevel <= 85
+#	ItemLevel >= 84
+#	Rarity < Rare
+#	BaseType "Ambusher" "Archon Kite Shield" "Assassin's Garb" "Astral Plate" "Colossal Tower Shield" "Coronal Maul" "Deicide Mask" "Demon Dagger" "Exquisite Blade" "Fleshripper" "Fossilised Spirit Shield" "Gemini Claw" "Harbinger Bow" "Harmonic Spirit Shield" "Harpy Rapier" "Heavy Belt" "Imbued Wand" "Jewelled Foil" "Kris" "Opal Sceptre" "Opal Wand" "Pinnacle Tower Shield" "Profane Wand" "Royal Burgonet" "Sadist Garb" "Saintly Chainmail" "Sambar Sceptre" "Siege Axe" "Skean" "Slink Boots" "Slink Gloves" "Spine Bow" "Spiraled Foil" "Thicket Bow" "Titan Gauntlets" "Titan Greaves" "Vaal Axe" "Vaal Regalia" "Void Sceptre"
+#	SetFontSize 40
+#	SetBorderColor 200 200 0 185
+#	SetBackgroundColor 0 0 0 185
 
 #------------------------------------
 #   [1904] Level-Independent Highlight
@@ -2609,7 +2609,7 @@ Show # %H2 $size->small
 	SetBorderColor 150 150 150              # BORDERCOLOR:	 Neutral T1
 	SetBackgroundColor 75 75 75 255         # BACKGROUND:	 Recipe T2
 
-Show # %H1 $size->large
+Hide # %H1 $size->large
 	Width >= 2
 	Height >= 4
 	ItemLevel >= 65
@@ -2618,7 +2618,7 @@ Show # %H1 $size->large
 	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
 	SetBackgroundColor 75 75 75 255         # BACKGROUND:	 Recipe T2
 
-Show # %H1
+Hide # %H1
 	ItemLevel >= 65
 	Rarity < Rare
 	SocketGroup RGB
@@ -2638,41 +2638,41 @@ Show # %D3
 	SetBorderColor 255 255 255 255          # BORDERCOLOR:	 T1 highlight
 	SetBackgroundColor 75 75 75 255         # BACKGROUND:	 Recipe T2
 
-Show # %D1
-	Quality >= 15
-	ItemLevel > 65
-	Rarity <= Magic
-	BaseType "Flask"
-	SetFontSize 36
-	SetBorderColor 150 150 150              # BORDERCOLOR:	 Neutral T1
-	SetBackgroundColor 75 75 75 255         # BACKGROUND:	 Recipe T2
+#Show # %D1
+#	Quality >= 15
+#	ItemLevel > 65
+#	Rarity <= Magic
+#	BaseType "Flask"
+#	SetFontSize 36
+#	SetBorderColor 150 150 150              # BORDERCOLOR:	 Neutral T1
+#	SetBackgroundColor 75 75 75 255         # BACKGROUND:	 Recipe T2
 
-Show # %D1
-	Quality >= 1
-	ItemLevel > 65
-	Rarity <= Magic
-	BaseType "Flask"
-	SetFontSize 36
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 75 75 75 255         # BACKGROUND:	 Recipe T2
+#Show # %D1
+#	Quality >= 1
+#	ItemLevel > 65
+#	Rarity <= Magic
+#	BaseType "Flask"
+#	SetFontSize 36
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 75 75 75 255         # BACKGROUND:	 Recipe T2
 
-Show # %D1
-	ItemLevel <= 74
-	ItemLevel >= 66
-	Rarity <= Magic
-	Class "Life Flasks"
-	BaseType "Divine" "Eternal"
-	SetFontSize 36
-	SetBorderColor 120 0 0                  # BORDERCOLOR:	 Aspect Life Flask
+#Show # %D1
+#	ItemLevel <= 74
+#	ItemLevel >= 66
+#	Rarity <= Magic
+#	Class "Life Flasks"
+#	BaseType "Divine" "Eternal"
+#	SetFontSize 36
+#	SetBorderColor 120 0 0                  # BORDERCOLOR:	 Aspect Life Flask
 
-Show # %D1
-	ItemLevel <= 74
-	ItemLevel >= 66
-	Rarity <= Magic
-	Class "Mana Flasks"
-	BaseType "Divine" "Eternal"
-	SetFontSize 36
-	SetBorderColor 0 0 120                  # BORDERCOLOR:	 Aspect: Mana Flask
+#Show # %D1
+#	ItemLevel <= 74
+#	ItemLevel >= 66
+#	Rarity <= Magic
+#	Class "Mana Flasks"
+#	BaseType "Divine" "Eternal"
+#	SetFontSize 36
+#	SetBorderColor 0 0 120                  # BORDERCOLOR:	 Aspect: Mana Flask
 
 Show # %D2
 	ItemLevel > 65
@@ -2687,44 +2687,44 @@ Show # %D2
 #------------------------------------
 # Chisel Recipe: You can sell a 20% hammer + random map for 1 chisel
 
-Show # %D1
-	Quality 20
-	Rarity < Unique
-	BaseType "Gavel" "Rock Breaker" "Stone Hammer"
-	SetFontSize 36
-	SetBorderColor 255 255 255 255          # BORDERCOLOR:	 T1 highlight
-	SetBackgroundColor 75 75 75 255         # BACKGROUND:	 Recipe T2
+#Show # %D1
+#	Quality 20
+#	Rarity < Unique
+#	BaseType "Gavel" "Rock Breaker" "Stone Hammer"
+#	SetFontSize 36
+#	SetBorderColor 255 255 255 255          # BORDERCOLOR:	 T1 highlight
+#	SetBackgroundColor 75 75 75 255         # BACKGROUND:	 Recipe T2
 
-Show # %D1
-	Corrupted False
-	Quality > 17
-	Rarity Magic
-	BaseType "Gavel" "Rock Breaker" "Stone Hammer"
-	SetBorderColor 150 150 150              # BORDERCOLOR:	 Neutral T1
-	SetBackgroundColor 75 75 75 255         # BACKGROUND:	 Recipe T2
+#Show # %D1
+#	Corrupted False
+#	Quality > 17
+#	Rarity Magic
+#	BaseType "Gavel" "Rock Breaker" "Stone Hammer"
+#	SetBorderColor 150 150 150              # BORDERCOLOR:	 Neutral T1
+#	SetBackgroundColor 75 75 75 255         # BACKGROUND:	 Recipe T2
 
-Show # %D1
-	Corrupted False
-	Quality > 14
-	Rarity Normal
-	BaseType "Gavel" "Rock Breaker" "Stone Hammer"
-	SetBorderColor 150 150 150              # BORDERCOLOR:	 Neutral T1
-	SetBackgroundColor 75 75 75 255         # BACKGROUND:	 Recipe T2
+#Show # %D1
+#	Corrupted False
+#	Quality > 14
+#	Rarity Normal
+#	BaseType "Gavel" "Rock Breaker" "Stone Hammer"
+#	SetBorderColor 150 150 150              # BORDERCOLOR:	 Neutral T1
+#	SetBackgroundColor 75 75 75 255         # BACKGROUND:	 Recipe T2
 
-Show # %D1
-	Corrupted False
-	Quality > 11
-	Rarity Magic
-	BaseType "Gavel" "Rock Breaker" "Stone Hammer"
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 75 75 75 255         # BACKGROUND:	 Recipe T2
+#Show # %D1
+#	Corrupted False
+#	Quality > 11
+#	Rarity Magic
+#	BaseType "Gavel" "Rock Breaker" "Stone Hammer"
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 75 75 75 255         # BACKGROUND:	 Recipe T2
 
-Show # %D1
-	Corrupted False
-	Rarity Normal
-	BaseType "Gavel" "Rock Breaker" "Stone Hammer"
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 75 75 75 255         # BACKGROUND:	 Recipe T2
+#Show # %D1
+#	Corrupted False
+#	Rarity Normal
+#	BaseType "Gavel" "Rock Breaker" "Stone Hammer"
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 75 75 75 255         # BACKGROUND:	 Recipe T2
 
 #===============================================================================================================
 #   [2104] Animate Weapon script - deactivated by default
@@ -2773,67 +2773,67 @@ Show # %D1
 #   [2201] Endgame-start 4-links
 #------------------------------------
 
-Show # %D0
-	LinkedSockets >= 4
-	ItemLevel < 72
-	DropLevel >= 65
-	Rarity < Rare
-	Class "Body Armour" "Boots" "Gloves" "Helmets"
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
+#Show # %D0
+#	LinkedSockets >= 4
+#	ItemLevel < 72
+#	DropLevel >= 65
+#	Rarity < Rare
+#	Class "Body Armour" "Boots" "Gloves" "Helmets"
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
 
 #------------------------------------
 #   [2202] 60+ Crafting rules for 60++ trinkets
 #------------------------------------
 
-Show # %D1
-	ItemLevel >= 75
-	Rarity Normal
-	Class Amulet Belts Rings
-	BaseType "Diamond" "Onyx" "Prismatic" "Two-Stone"
-	SetTextColor 200 200 200 210            # TEXTCOLOR:	 Neutral Priority
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
+#Show # %D1
+#	ItemLevel >= 75
+#	Rarity Normal
+#	Class Amulet Belts Rings
+#	BaseType "Diamond" "Onyx" "Prismatic" "Two-Stone"
+#	SetTextColor 200 200 200 210            # TEXTCOLOR:	 Neutral Priority
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
 
-Show # %D0
-	ItemLevel >= 75
-	Rarity Normal
-	Class Amulet Belts Rings
-	BaseType "Agate" "Amber" "Citrine" "Coral Ring" "Gold" "Heavy Belt" "Jade" "Lapis" "Leather" "Moonstone" "Ruby" "Rustic Sash" "Sapphire" "Topaz" "Turquoise"
-	SetTextColor 200 200 200 210            # TEXTCOLOR:	 Neutral Priority
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
+#Show # %D0
+#	ItemLevel >= 75
+#	Rarity Normal
+#	Class Amulet Belts Rings
+#	BaseType "Agate" "Amber" "Citrine" "Coral Ring" "Gold" "Heavy Belt" "Jade" "Lapis" "Leather" "Moonstone" "Ruby" "Rustic Sash" "Sapphire" "Topaz" "Turquoise"
+#	SetTextColor 200 200 200 210            # TEXTCOLOR:	 Neutral Priority
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
 
-Show # %D0
-	ItemLevel >= 65
-	ItemLevel <= 74
-	Rarity Normal
-	Class Amulet Belts Rings
-	BaseType "Diamond" "Onyx" "Prismatic" "Two-Stone"
-	SetTextColor 200 200 200 210            # TEXTCOLOR:	 Neutral Priority
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
+#Show # %D0
+#	ItemLevel >= 65
+#	ItemLevel <= 74
+#	Rarity Normal
+#	Class Amulet Belts Rings
+#	BaseType "Diamond" "Onyx" "Prismatic" "Two-Stone"
+#	SetTextColor 200 200 200 210            # TEXTCOLOR:	 Neutral Priority
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
 
-Show # %D0
-	ItemLevel >= 65
-	ItemLevel <= 74
-	Rarity Normal
-	Class Amulet Belts Rings
-	BaseType "Agate" "Amber" "Chain Belt" "Citrine" "Coral Ring" "Gold" "Heavy Belt" "Jade" "Lapis" "Leather" "Moonstone" "Ruby" "Rustic Sash" "Sapphire" "Topaz" "Turquoise"
-	SetTextColor 200 200 200 210            # TEXTCOLOR:	 Neutral Priority
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
+#Show # %D0
+#	ItemLevel >= 65
+#	ItemLevel <= 74
+#	Rarity Normal
+#	Class Amulet Belts Rings
+#	BaseType "Agate" "Amber" "Chain Belt" "Citrine" "Coral Ring" "Gold" "Heavy Belt" "Jade" "Lapis" "Leather" "Moonstone" "Ruby" "Rustic Sash" "Sapphire" "Topaz" "Turquoise"
+#	SetTextColor 200 200 200 210            # TEXTCOLOR:	 Neutral Priority
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
 
 #------------------------------------
 #   [2203] Low Strictness Magic/Normal Trinkets
 #------------------------------------
 
-Show # %D0
-	ItemLevel >= 65
-	Rarity Magic
-	Class Amulets Belts Rings
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
+#Show # %D0
+#	ItemLevel >= 65
+#	Rarity Magic
+#	Class Amulets Belts Rings
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
 
 #===============================================================================================================
 # [[2300]] HIDE LAYER 1 - MAGIC AND NORMAL ITEMS
@@ -3159,21 +3159,21 @@ Show # %D3 %UP $size->small
 	SetBorderColor 150 150 150              # BORDERCOLOR:	 Neutral T1
 	SetBackgroundColor 75 75 75 255         # BACKGROUND:	 Recipe T2
 
-Show # %D1
-	ItemLevel >= 75
-	Rarity Rare
-	SocketGroup RGB
-	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T2 Rare
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 75 75 75 255         # BACKGROUND:	 Recipe T2
+#Show # %D1
+#	ItemLevel >= 75
+#	Rarity Rare
+#	SocketGroup RGB
+#	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T2 Rare
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 75 75 75 255         # BACKGROUND:	 Recipe T2
 
-Show # %D1 %UP
-	ItemLevel >= 65
-	Rarity Rare
-	SocketGroup RGB
-	SetTextColor 255 255 119 255            # TEXTCOLOR:	 T2 Rare
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 75 75 75 255         # BACKGROUND:	 Recipe T2
+#Show # %D1 %UP
+#	ItemLevel >= 65
+#	Rarity Rare
+#	SocketGroup RGB
+#	SetTextColor 255 255 119 255            # TEXTCOLOR:	 T2 Rare
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 75 75 75 255         # BACKGROUND:	 Recipe T2
 
 #------------------------------------
 #   [2804] 1H Rune Dagger
@@ -3197,21 +3197,21 @@ Show # %D2 %UP $size->small
 	SetBorderColor 120 120 120              # BORDERCOLOR:	 Rares: small
 	SetBackgroundColor 0 0 0 219            # BACKGROUND:	 Neutral T4
 
-Show # %D1 $size->small
-	ItemLevel >= 75
-	Rarity Rare
-	Class "Rune Dagger"
-	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T3 Rare
-	SetBorderColor 120 120 120              # BORDERCOLOR:	 Rares: small
-	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
+#Show # %D1 $size->small
+#	ItemLevel >= 75
+#	Rarity Rare
+#	Class "Rune Dagger"
+#	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T3 Rare
+#	SetBorderColor 120 120 120              # BORDERCOLOR:	 Rares: small
+#	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
 
-Show # %D1 %UP $size->small
-	ItemLevel >= 65
-	Rarity Rare
-	Class "Rune Dagger"
-	SetTextColor 220 220 119 220            # TEXTCOLOR:	 T3 Rare
-	SetBorderColor 120 120 120              # BORDERCOLOR:	 Rares: small
-	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
+#Show # %D1 %UP $size->small
+#	ItemLevel >= 65
+#	Rarity Rare
+#	Class "Rune Dagger"
+#	SetTextColor 220 220 119 220            # TEXTCOLOR:	 T3 Rare
+#	SetBorderColor 120 120 120              # BORDERCOLOR:	 Rares: small
+#	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
 
 #------------------------------------
 #   [2805] 1H Daggers
@@ -3235,21 +3235,21 @@ Show # %D2 %UP $size->small
 	SetBorderColor 120 120 120              # BORDERCOLOR:	 Rares: small
 	SetBackgroundColor 0 0 0 219            # BACKGROUND:	 Neutral T4
 
-Show # %D1 $size->small
-	ItemLevel >= 75
-	Rarity Rare
-	Class "Daggers"
-	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T3 Rare
-	SetBorderColor 120 120 120              # BORDERCOLOR:	 Rares: small
-	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
+#Show # %D1 $size->small
+#	ItemLevel >= 75
+#	Rarity Rare
+#	Class "Daggers"
+#	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T3 Rare
+#	SetBorderColor 120 120 120              # BORDERCOLOR:	 Rares: small
+#	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
 
-Show # %D1 %UP $size->small
-	ItemLevel >= 65
-	Rarity Rare
-	Class "Daggers"
-	SetTextColor 220 220 119 220            # TEXTCOLOR:	 T3 Rare
-	SetBorderColor 120 120 120              # BORDERCOLOR:	 Rares: small
-	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
+#Show # %D1 %UP $size->small
+#	ItemLevel >= 65
+#	Rarity Rare
+#	Class "Daggers"
+#	SetTextColor 220 220 119 220            # TEXTCOLOR:	 T3 Rare
+#	SetBorderColor 120 120 120              # BORDERCOLOR:	 Rares: small
+#	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
 
 #------------------------------------
 #   [2806] 1H Claws
@@ -3273,21 +3273,21 @@ Show # %D2 %UP $size->small
 	SetBorderColor 120 120 120              # BORDERCOLOR:	 Rares: small
 	SetBackgroundColor 0 0 0 219            # BACKGROUND:	 Neutral T4
 
-Show # %D1 $size->small
-	ItemLevel >= 75
-	Rarity Rare
-	Class "Claws"
-	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T3 Rare
-	SetBorderColor 120 120 120              # BORDERCOLOR:	 Rares: small
-	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
+#Show # %D1 $size->small
+#	ItemLevel >= 75
+#	Rarity Rare
+#	Class "Claws"
+#	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T3 Rare
+#	SetBorderColor 120 120 120              # BORDERCOLOR:	 Rares: small
+#	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
 
-Show # %D1 %UP $size->small
-	ItemLevel >= 65
-	Rarity Rare
-	Class "Claws"
-	SetTextColor 220 220 119 220            # TEXTCOLOR:	 T3 Rare
-	SetBorderColor 120 120 120              # BORDERCOLOR:	 Rares: small
-	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
+#Show # %D1 %UP $size->small
+#	ItemLevel >= 65
+#	Rarity Rare
+#	Class "Claws"
+#	SetTextColor 220 220 119 220            # TEXTCOLOR:	 T3 Rare
+#	SetBorderColor 120 120 120              # BORDERCOLOR:	 Rares: small
+#	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
 
 #------------------------------------
 #   [2807] 1H Wands
@@ -3311,21 +3311,21 @@ Show # %D2 %UP $size->small
 	SetBorderColor 120 120 120              # BORDERCOLOR:	 Rares: small
 	SetBackgroundColor 0 0 0 219            # BACKGROUND:	 Neutral T4
 
-Show # %D1 $size->small
-	ItemLevel >= 75
-	Rarity Rare
-	Class "Wands"
-	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T3 Rare
-	SetBorderColor 120 120 120              # BORDERCOLOR:	 Rares: small
-	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
+#Show # %D1 $size->small
+#	ItemLevel >= 75
+#	Rarity Rare
+#	Class "Wands"
+#	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T3 Rare
+#	SetBorderColor 120 120 120              # BORDERCOLOR:	 Rares: small
+#	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
 
-Show # %D1 %UP $size->small
-	ItemLevel >= 65
-	Rarity Rare
-	Class "Wands"
-	SetTextColor 220 220 119 220            # TEXTCOLOR:	 T3 Rare
-	SetBorderColor 120 120 120              # BORDERCOLOR:	 Rares: small
-	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
+#Show # %D1 %UP $size->small
+#	ItemLevel >= 65
+#	Rarity Rare
+#	Class "Wands"
+#	SetTextColor 220 220 119 220            # TEXTCOLOR:	 T3 Rare
+#	SetBorderColor 120 120 120              # BORDERCOLOR:	 Rares: small
+#	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
 
 #------------------------------------
 #   [2808] 1H Foils
@@ -3351,23 +3351,23 @@ Show # %D2 %UP $size->small
 	SetBorderColor 120 120 120              # BORDERCOLOR:	 Rares: small
 	SetBackgroundColor 0 0 0 219            # BACKGROUND:	 Neutral T4
 
-Show # %D1 $size->small
-	Height 4
-	ItemLevel >= 75
-	Rarity Rare
-	Class "One Hand Swords"
-	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T3 Rare
-	SetBorderColor 120 120 120              # BORDERCOLOR:	 Rares: small
-	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
+#Show # %D1 $size->small
+#	Height 4
+#	ItemLevel >= 75
+#	Rarity Rare
+#	Class "One Hand Swords"
+#	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T3 Rare
+#	SetBorderColor 120 120 120              # BORDERCOLOR:	 Rares: small
+#	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
 
-Show # %D1 %UP $size->small
-	Height 4
-	ItemLevel >= 65
-	Rarity Rare
-	Class "One Hand Swords"
-	SetTextColor 220 220 119 220            # TEXTCOLOR:	 T3 Rare
-	SetBorderColor 120 120 120              # BORDERCOLOR:	 Rares: small
-	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
+#Show # %D1 %UP $size->small
+#	Height 4
+#	ItemLevel >= 65
+#	Rarity Rare
+#	Class "One Hand Swords"
+#	SetTextColor 220 220 119 220            # TEXTCOLOR:	 T3 Rare
+#	SetBorderColor 120 120 120              # BORDERCOLOR:	 Rares: small
+#	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
 
 #------------------------------------
 #   [2809] 1H Swords
@@ -3393,23 +3393,23 @@ Show # %D2 %UP
 	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
 	SetBackgroundColor 0 0 0 219            # BACKGROUND:	 Neutral T4
 
-Show # %D1
-	Height < 4
-	ItemLevel >= 75
-	Rarity Rare
-	Class "One Hand Swords"
-	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T3 Rare
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
+#Show # %D1
+#	Height < 4
+#	ItemLevel >= 75
+#	Rarity Rare
+#	Class "One Hand Swords"
+#	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T3 Rare
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
 
-Show # %D1 %UP
-	Height < 4
-	ItemLevel >= 65
-	Rarity Rare
-	Class "One Hand Swords"
-	SetTextColor 220 220 119 220            # TEXTCOLOR:	 T3 Rare
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
+#Show # %D1 %UP
+#	Height < 4
+#	ItemLevel >= 65
+#	Rarity Rare
+#	Class "One Hand Swords"
+#	SetTextColor 220 220 119 220            # TEXTCOLOR:	 T3 Rare
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
 
 #------------------------------------
 #   [2810] 1H Maces
@@ -3433,21 +3433,21 @@ Show # %D2 %UP
 	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
 	SetBackgroundColor 0 0 0 219            # BACKGROUND:	 Neutral T4
 
-Show # %D1
-	ItemLevel >= 75
-	Rarity Rare
-	Class "One Hand Maces"
-	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T3 Rare
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
+#Show # %D1
+#	ItemLevel >= 75
+#	Rarity Rare
+#	Class "One Hand Maces"
+#	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T3 Rare
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
 
-Show # %D1 %UP
-	ItemLevel >= 65
-	Rarity Rare
-	Class "One Hand Maces"
-	SetTextColor 220 220 119 220            # TEXTCOLOR:	 T3 Rare
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
+#Show # %D1 %UP
+#	ItemLevel >= 65
+#	Rarity Rare
+#	Class "One Hand Maces"
+#	SetTextColor 220 220 119 220            # TEXTCOLOR:	 T3 Rare
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
 
 #------------------------------------
 #   [2811] 1H Axes
@@ -3471,21 +3471,21 @@ Show # %D2 %UP
 	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
 	SetBackgroundColor 0 0 0 219            # BACKGROUND:	 Neutral T4
 
-Show # %D1
-	ItemLevel >= 75
-	Rarity Rare
-	Class "One Hand Axes"
-	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T3 Rare
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
+#Show # %D1
+#	ItemLevel >= 75
+#	Rarity Rare
+#	Class "One Hand Axes"
+#	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T3 Rare
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
 
-Show # %D1 %UP
-	ItemLevel >= 65
-	Rarity Rare
-	Class "One Hand Axes"
-	SetTextColor 220 220 119 220            # TEXTCOLOR:	 T3 Rare
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
+#Show # %D1 %UP
+#	ItemLevel >= 65
+#	Rarity Rare
+#	Class "One Hand Axes"
+#	SetTextColor 220 220 119 220            # TEXTCOLOR:	 T3 Rare
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
 
 #------------------------------------
 #   [2812] 1H Sceptres
@@ -3509,21 +3509,21 @@ Show # %D2 %UP
 	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
 	SetBackgroundColor 0 0 0 219            # BACKGROUND:	 Neutral T4
 
-Show # %D1
-	ItemLevel >= 75
-	Rarity Rare
-	Class "Sceptres"
-	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T3 Rare
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
+#Show # %D1
+#	ItemLevel >= 75
+#	Rarity Rare
+#	Class "Sceptres"
+#	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T3 Rare
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
 
-Show # %D1 %UP
-	ItemLevel >= 65
-	Rarity Rare
-	Class "Sceptres"
-	SetTextColor 220 220 119 220            # TEXTCOLOR:	 T3 Rare
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
+#Show # %D1 %UP
+#	ItemLevel >= 65
+#	Rarity Rare
+#	Class "Sceptres"
+#	SetTextColor 220 220 119 220            # TEXTCOLOR:	 T3 Rare
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
 
 #------------------------------------
 #   [2813] Warstaves
@@ -3547,21 +3547,21 @@ Show # %D2 %UP
 	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
 	SetBackgroundColor 0 0 0 219            # BACKGROUND:	 Neutral T4
 
-Show # %D1
-	ItemLevel >= 75
-	Rarity Rare
-	Class "Warstaves"
-	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T3 Rare
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
+#Show # %D1
+#	ItemLevel >= 75
+#	Rarity Rare
+#	Class "Warstaves"
+#	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T3 Rare
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
 
-Show # %D1 %UP
-	ItemLevel >= 65
-	Rarity Rare
-	Class "Warstaves"
-	SetTextColor 220 220 119 220            # TEXTCOLOR:	 T3 Rare
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
+#Show # %D1 %UP
+#	ItemLevel >= 65
+#	Rarity Rare
+#	Class "Warstaves"
+#	SetTextColor 220 220 119 220            # TEXTCOLOR:	 T3 Rare
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
 
 #------------------------------------
 #   [2814] 2H Staves
@@ -3585,21 +3585,21 @@ Show # %D2 %UP
 	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
 	SetBackgroundColor 0 0 0 219            # BACKGROUND:	 Neutral T4
 
-Show # %D1
-	ItemLevel >= 75
-	Rarity Rare
-	Class "Staves"
-	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T3 Rare
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
+#Show # %D1
+#	ItemLevel >= 75
+#	Rarity Rare
+#	Class "Staves"
+#	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T3 Rare
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
 
-Show # %D1 %UP
-	ItemLevel >= 65
-	Rarity Rare
-	Class "Staves"
-	SetTextColor 220 220 119 220            # TEXTCOLOR:	 T3 Rare
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
+#Show # %D1 %UP
+#	ItemLevel >= 65
+#	Rarity Rare
+#	Class "Staves"
+#	SetTextColor 220 220 119 220            # TEXTCOLOR:	 T3 Rare
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
 
 #------------------------------------
 #   [2815] 2H Swords, Axes, Maces
@@ -3623,21 +3623,21 @@ Show # %D2 %UP
 	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
 	SetBackgroundColor 0 0 0 219            # BACKGROUND:	 Neutral T4
 
-Show # %D1
-	ItemLevel >= 75
-	Rarity Rare
-	Class "Two Hand Axes" "Two Hand Maces" "Two Hand Swords"
-	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T3 Rare
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
+#Show # %D1
+#	ItemLevel >= 75
+#	Rarity Rare
+#	Class "Two Hand Axes" "Two Hand Maces" "Two Hand Swords"
+#	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T3 Rare
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
 
-Show # %D1 %UP
-	ItemLevel >= 65
-	Rarity Rare
-	Class "Two Hand Axes" "Two Hand Maces" "Two Hand Swords"
-	SetTextColor 220 220 119 220            # TEXTCOLOR:	 T3 Rare
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
+#Show # %D1 %UP
+#	ItemLevel >= 65
+#	Rarity Rare
+#	Class "Two Hand Axes" "Two Hand Maces" "Two Hand Swords"
+#	SetTextColor 220 220 119 220            # TEXTCOLOR:	 T3 Rare
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
 
 #------------------------------------
 #   [2816] 2H Bows
@@ -3661,21 +3661,21 @@ Show # %D2 %UP
 	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
 	SetBackgroundColor 0 0 0 219            # BACKGROUND:	 Neutral T4
 
-Show # %D1
-	ItemLevel >= 75
-	Rarity Rare
-	Class "Bows"
-	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T3 Rare
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
+#Show # %D1
+#	ItemLevel >= 75
+#	Rarity Rare
+#	Class "Bows"
+#	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T3 Rare
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
 
-Show # %D1 %UP
-	ItemLevel >= 65
-	Rarity Rare
-	Class "Bows"
-	SetTextColor 220 220 119 220            # TEXTCOLOR:	 T3 Rare
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
+#Show # %D1 %UP
+#	ItemLevel >= 65
+#	Rarity Rare
+#	Class "Bows"
+#	SetTextColor 220 220 119 220            # TEXTCOLOR:	 T3 Rare
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
 
 #------------------------------------
 #   [2817] AR: Gloves, Boots, Helmets
@@ -3709,21 +3709,21 @@ Show # %D2 %UP $size->small
 	SetBorderColor 120 120 120              # BORDERCOLOR:	 Rares: small
 	SetBackgroundColor 0 0 0 219            # BACKGROUND:	 Neutral T4
 
-Show # %D1 $size->small
-	ItemLevel >= 75
-	Rarity Rare
-	Class "Boots" "Gloves" "Helmets"
-	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T3 Rare
-	SetBorderColor 120 120 120              # BORDERCOLOR:	 Rares: small
-	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
+#Show # %D1 $size->small
+#	ItemLevel >= 75
+#	Rarity Rare
+#	Class "Boots" "Gloves" "Helmets"
+#	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T3 Rare
+#	SetBorderColor 120 120 120              # BORDERCOLOR:	 Rares: small
+#	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
 
-Show # %D1 %UP $size->small
-	ItemLevel >= 65
-	Rarity Rare
-	Class "Boots" "Gloves" "Helmets"
-	SetTextColor 220 220 119 220            # TEXTCOLOR:	 T3 Rare
-	SetBorderColor 120 120 120              # BORDERCOLOR:	 Rares: small
-	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
+#Show # %D1 %UP $size->small
+#	ItemLevel >= 65
+#	Rarity Rare
+#	Class "Boots" "Gloves" "Helmets"
+#	SetTextColor 220 220 119 220            # TEXTCOLOR:	 T3 Rare
+#	SetBorderColor 120 120 120              # BORDERCOLOR:	 Rares: small
+#	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
 
 #------------------------------------
 #   [2818] AR: Body Armors
@@ -3747,21 +3747,21 @@ Show # %D2 %UP
 	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
 	SetBackgroundColor 0 0 0 219            # BACKGROUND:	 Neutral T4
 
-Show # %D1
-	ItemLevel >= 75
-	Rarity Rare
-	Class "Body Armour"
-	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T3 Rare
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
+#Show # %D1
+#	ItemLevel >= 75
+#	Rarity Rare
+#	Class "Body Armour"
+#	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T3 Rare
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
 
-Show # %D1 %UP
-	ItemLevel >= 65
-	Rarity Rare
-	Class "Body Armour"
-	SetTextColor 220 220 119 220            # TEXTCOLOR:	 T3 Rare
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
+#Show # %D1 %UP
+#	ItemLevel >= 65
+#	Rarity Rare
+#	Class "Body Armour"
+#	SetTextColor 220 220 119 220            # TEXTCOLOR:	 T3 Rare
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
 
 #------------------------------------
 #   [2819] OH: Shields
@@ -3787,23 +3787,23 @@ Show # %D2 %UP $size->small
 	SetBorderColor 120 120 120              # BORDERCOLOR:	 Rares: small
 	SetBackgroundColor 0 0 0 219            # BACKGROUND:	 Neutral T4
 
-Show # %D1 $size->small
-	Height <= 2
-	ItemLevel >= 75
-	Rarity Rare
-	Class "Shields"
-	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T3 Rare
-	SetBorderColor 120 120 120              # BORDERCOLOR:	 Rares: small
-	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
+#Show # %D1 $size->small
+#	Height <= 2
+#	ItemLevel >= 75
+#	Rarity Rare
+#	Class "Shields"
+#	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T3 Rare
+#	SetBorderColor 120 120 120              # BORDERCOLOR:	 Rares: small
+#	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
 
-Show # %D1 %UP $size->small
-	Height <= 2
-	ItemLevel >= 65
-	Rarity Rare
-	Class "Shields"
-	SetTextColor 220 220 119 220            # TEXTCOLOR:	 T3 Rare
-	SetBorderColor 120 120 120              # BORDERCOLOR:	 Rares: small
-	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
+#Show # %D1 %UP $size->small
+#	Height <= 2
+#	ItemLevel >= 65
+#	Rarity Rare
+#	Class "Shields"
+#	SetTextColor 220 220 119 220            # TEXTCOLOR:	 T3 Rare
+#	SetBorderColor 120 120 120              # BORDERCOLOR:	 Rares: small
+#	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
 
 Show # %D2
 	Height >= 3
@@ -3825,23 +3825,23 @@ Show # %D2 %UP
 	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
 	SetBackgroundColor 0 0 0 219            # BACKGROUND:	 Neutral T4
 
-Show # %D1
-	Height >= 3
-	ItemLevel >= 75
-	Rarity Rare
-	Class "Shields"
-	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T3 Rare
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
+#Show # %D1
+#	Height >= 3
+#	ItemLevel >= 75
+#	Rarity Rare
+#	Class "Shields"
+#	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T3 Rare
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
 
-Show # %D1 %UP
-	Height >= 3
-	ItemLevel >= 65
-	Rarity Rare
-	Class "Shields"
-	SetTextColor 220 220 119 220            # TEXTCOLOR:	 T3 Rare
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
+#Show # %D1 %UP
+#	Height >= 3
+#	ItemLevel >= 65
+#	Rarity Rare
+#	Class "Shields"
+#	SetTextColor 220 220 119 220            # TEXTCOLOR:	 T3 Rare
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
 
 #------------------------------------
 #   [2820] OH: Quivers
@@ -3865,21 +3865,21 @@ Show # %D2 %UP
 	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
 	SetBackgroundColor 0 0 0 219            # BACKGROUND:	 Neutral T4
 
-Show # %D1
-	ItemLevel >= 75
-	Rarity Rare
-	Class "Quivers"
-	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T3 Rare
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
+#Show # %D1
+#	ItemLevel >= 75
+#	Rarity Rare
+#	Class "Quivers"
+#	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T3 Rare
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
 
-Show # %D1 %UP
-	ItemLevel >= 65
-	Rarity Rare
-	Class "Quivers"
-	SetTextColor 220 220 119 220            # TEXTCOLOR:	 T3 Rare
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
+#Show # %D1 %UP
+#	ItemLevel >= 65
+#	Rarity Rare
+#	Class "Quivers"
+#	SetTextColor 220 220 119 220            # TEXTCOLOR:	 T3 Rare
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
 
 #===============================================================================================================
 # [[2900]] HIDE LAYER 2 - RARE ITEMS (65+ ONLY FOR NON-REGULAR VERSIONS)
@@ -4169,7 +4169,6 @@ Show # %REMS1 $lvl
 	SetFontSize 45
 	SetBorderColor 50 200 125               # BORDERCOLOR:	 Flask
 	SetBackgroundColor 25 100 75            # BACKGROUND:	 Flasks
-	PlayAlertSound 12 300                   # DROPSOUND:	 Underrated Leveling Sound
 
 Show # %REMS1 $lvl
 	ItemLevel <= 65
@@ -4178,7 +4177,6 @@ Show # %REMS1 $lvl
 	SetFontSize 45
 	SetBorderColor 50 200 125               # BORDERCOLOR:	 Flask
 	SetBackgroundColor 25 100 75            # BACKGROUND:	 Flasks
-	PlayAlertSound 12 300                   # DROPSOUND:	 Underrated Leveling Sound
 
 #===============================================================================================================
 # [[3300]] HIDE LAYER 3: Random Endgame Flasks
@@ -4883,7 +4881,7 @@ Show # %H2 %C2 $tier->t41 $type->currency
 Show # %RF1 %H2 %C2 $tier->t42 $type->currency
 	Class Currency
 	BaseType "Portal Scroll"
-	SetFontSize 40
+	SetFontSize 36
 	SetTextColor 170 158 130 220            # TEXTCOLOR:	 Currency Cosmetic 2
 	SetBorderColor 30 50 100 255            # BORDERCOLOR:	 Portal
 	SetBackgroundColor 0 0 0 255            # BACKGROUND:	 Neutral T2
@@ -4891,7 +4889,7 @@ Show # %RF1 %H2 %C2 $tier->t42 $type->currency
 Show # %RF1 %H2 %C2 $tier->t43 $type->currency
 	Class Currency
 	BaseType "Scroll of Wisdom"
-	SetFontSize 40
+	SetFontSize 36
 	SetTextColor 170 158 130 220            # TEXTCOLOR:	 Currency Cosmetic 2
 	SetBorderColor 100 50 30 255            # BORDERCOLOR:	 Wisdom
 	SetBackgroundColor 0 0 0 255            # BACKGROUND:	 Neutral T2
@@ -6251,11 +6249,11 @@ Show # %D3
 	SetBorderColor 50 200 125               # BORDERCOLOR:	 Flask
 	SetBackgroundColor 25 100 75            # BACKGROUND:	 Flasks
 
-Show # %D1
-	Rarity <= Magic
-	BaseType Flask
-	SetFontSize 36
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#Show # %D1
+#	Rarity <= Magic
+#	BaseType Flask
+#	SetFontSize 36
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
 
 #===============================================================================================================
 # [[4900]] Leveling - Merged Rules
@@ -6270,7 +6268,6 @@ Show # %REMS1 %D5
 	SetTextColor 255 255 255 255
 	SetBorderColor 0 140 240 255            # BORDERCOLOR:	 Leveling Strong Highlight
 	SetBackgroundColor 75 75 75 255         # BACKGROUND:	 Recipe T2
-	PlayAlertSound 12 300                   # DROPSOUND:	 Underrated Leveling Sound
 
 Show # %REMS1 %D5 %RVR
 	LinkedSockets 4
@@ -6281,7 +6278,6 @@ Show # %REMS1 %D5 %RVR
 	SetTextColor 25 95 235 255
 	SetBorderColor 0 140 240 255            # BORDERCOLOR:	 Leveling Strong Highlight
 	SetBackgroundColor 75 75 75 255         # BACKGROUND:	 Recipe T2
-	PlayAlertSound 12 300                   # DROPSOUND:	 Underrated Leveling Sound
 
 Show # %REMS1 %D5
 	LinkedSockets 4
@@ -6291,7 +6287,6 @@ Show # %REMS1 %D5
 	SetFontSize 45
 	SetBorderColor 0 140 240 255            # BORDERCOLOR:	 Leveling Strong Highlight
 	SetBackgroundColor 75 75 75 255         # BACKGROUND:	 Recipe T2
-	PlayAlertSound 12 300                   # DROPSOUND:	 Underrated Leveling Sound
 
 #===============================================================================================================
 # [[5000]] Leveling - RGB Recipes
@@ -6342,7 +6337,6 @@ Show # %REMS1 %D4
 	SetFontSize 45
 	SetBorderColor 0 140 240 255            # BORDERCOLOR:	 Leveling Strong Highlight
 	SetBackgroundColor 0 75 30 255          # BACKGROUND:	 Rare T1
-	PlayAlertSound 12 300                   # DROPSOUND:	 Underrated Leveling Sound
 
 Show # %REMS1 %D4
 	Rarity Rare
@@ -6351,7 +6345,6 @@ Show # %REMS1 %D4
 	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 0 0 255                # BORDERCOLOR:	 Neutral T1
 	SetBackgroundColor 170 225 70 255       # BACKGROUND:	 Trinket T1
-	PlayAlertSound 12 300                   # DROPSOUND:	 Underrated Leveling Sound
 
 #------------------------------------
 #   [5102] Leveling rares - Armors
@@ -6626,11 +6619,11 @@ Show # %D2
 	SetBorderColor 120 120 120              # BORDERCOLOR:	 Rares: small
 	SetBackgroundColor 0 0 0 219            # BACKGROUND:	 Neutral T4
 
-Show # %D1
-	Rarity Rare
-	SetFontSize 36
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 219            # BACKGROUND:	 Neutral T4
+#Show # %D1
+#	Rarity Rare
+#	SetFontSize 36
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 219            # BACKGROUND:	 Neutral T4
 
 #===============================================================================================================
 # [[5200]] Leveling - Useful items
@@ -6647,7 +6640,6 @@ Show # %D3 %REMS1
 	SetTextColor 255 255 255 255
 	SetBorderColor 0 140 240 255            # BORDERCOLOR:	 Leveling Strong Highlight
 	SetBackgroundColor 0 0 0 255            # BACKGROUND:	 Neutral T2
-	PlayAlertSound 12 300                   # DROPSOUND:	 Underrated Leveling Sound
 
 Show # %D3 %REMS1 %RVR
 	LinkedSockets >= 4
@@ -6656,7 +6648,6 @@ Show # %D3 %REMS1 %RVR
 	SetTextColor 25 95 235 255
 	SetBorderColor 0 140 240 255            # BORDERCOLOR:	 Leveling Strong Highlight
 	SetBackgroundColor 0 0 0 255            # BACKGROUND:	 Neutral T2
-	PlayAlertSound 12 300                   # DROPSOUND:	 Underrated Leveling Sound
 
 #------------------------------------
 #   [5202] Linked gear - 3links
@@ -6755,13 +6746,13 @@ Show # %D2
 # Act 4-6 have a highly varying damage composition
 # However several of the strongest elemental attacks are fire-typed
 
-Show # %D1
-	ItemLevel <= 50
-	ItemLevel >= 36
-	Rarity <= Magic
-	BaseType "Onyx Amulet" "Ruby Ring" "Two-Stone Ring"
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
+#Show # %D1
+#	ItemLevel <= 50
+#	ItemLevel >= 36
+#	Rarity <= Magic
+#	BaseType "Onyx Amulet" "Ruby Ring" "Two-Stone Ring"
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
 
 #------------------------------------
 #   [5206] Optional Recipes
@@ -6819,12 +6810,12 @@ Show # %D2
 	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
 	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
 
-Show # %D1
-	ItemLevel <= 48
-	Rarity <= Magic
-	BaseType "Broadhead Arrow Quiver" "Penetrating Arrow Quiver" "Spike-Point Arrow Quiver"
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
+#Show # %D1
+#	ItemLevel <= 48
+#	Rarity <= Magic
+#	BaseType "Broadhead Arrow Quiver" "Penetrating Arrow Quiver" "Spike-Point Arrow Quiver"
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
 
 #------------------------------------
 #   [5302] Progression - Part 1 1-11
@@ -7132,12 +7123,12 @@ Show # %D2
 	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
 	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
 
-Show # %D0
-	ItemLevel <= 5
-	Rarity Normal
-	Class "Body Armours"
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
+#Show # %D0
+#	ItemLevel <= 5
+#	Rarity Normal
+#	Class "Body Armours"
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
 
 #===============================================================================================================
 # [[5500]] Leveling - misc magic items
@@ -7193,12 +7184,12 @@ Show # %D2
 	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
 	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
 
-Show # %D1
-	ItemLevel <= 32
-	Rarity Magic
-	Class Amulets Belts Rings
-	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
+#Show # %D1
+#	ItemLevel <= 32
+#	Rarity Magic
+#	Class Amulets Belts Rings
+#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+#	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
 
 #------------------------------------
 #   [5504] Vendor Magic items - Until 24
