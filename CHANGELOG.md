@@ -3,7 +3,8 @@ All notable changes to the "poe-filter" extension will be documented in this fil
 
 ## Released 
 
-### 2020-03-13 - `0.1.3`
+### 2023-05-06 - `0.1.4`
+- Add .ruthlessfilter file extension ([#4](https://github.com/explooosion/PoeFilterSyntax/pull/12))
 - Added support for new attributes and keywords ([#4](https://github.com/explooosion/PoeFilterSyntax/pull/4))
 - Add color provider and completion provider. ([#3](https://github.com/explooosion/PoeFilterSyntax/pull/3))
 - Update test files from [NeverSink's filter](https://github.com/NeverSinkDev/NeverSink-Filter).

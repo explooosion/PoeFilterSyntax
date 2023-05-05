@@ -12,7 +12,7 @@ Vscode Market：[POE Filter Highlight](https://marketplace.visualstudio.com/item
 
 This is a POE ( Path of Exile ) filter highlight for [VS Code](https://code.visualstudio.com/).
 
-The extension will make your `.filter` more visible and editable.
+The extension will make your `.filter`, `.ruthlessfilter` more visible and editable.
 
 -------
 
@@ -52,6 +52,10 @@ Change the Theme in Visual Studio Code.
 No requirements.
 
 -------
+
+## Development
+
+https://code.visualstudio.com/api/working-with-extensions/publishing-extension
 
 ## License
 MIT
